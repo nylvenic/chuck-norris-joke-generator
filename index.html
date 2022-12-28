@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Chuck Norris Joke Generator</title>
 </head>
 <body>
     <div class="container">
         <h1>Chuck Norris Joke Generator</h1>
         <form action="">
             <label for="numberOfJokes">Number of Jokes</label>
-            <input type="text" name="numberOfJokes" id="numberOfJokes" placeholder="Ex. 5">
-            <button>Submit</button>
+            <input type="number" min=1 max=5 name="numberOfJokes" id="numberOfJokes" placeholder="Ex. 5">
+            <button class="btn">Submit</button>
         </form>
+        <ul>
+            <li>Joke 1</li>
+            <li>Joke 2</li>
+            <li>Joke 3</li>
+            <li>Joke 4</li>
+        </ul>
     </div>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
